@@ -1,0 +1,35 @@
+//nav: 
+
+.nav {
+  align-items: center;
+  background-color: $color-dark-blue;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+//header:
+
+.header {
+  text-align: right;
+  margin: 100px 20px 0 0;
+}
+
+.header > * {
+  margin-bottom: 10px;
+}
+
+.header__balloon-img {
+  position: absolute;
+  top: 110px;
+  left: 30px;
+}
+
+//icons
+.icon {
+  margin-right: 10px;
+}

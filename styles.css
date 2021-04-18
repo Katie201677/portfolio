@@ -9,8 +9,57 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-h1 {
-  font-family: "Comfortaa", cursive;
+.header__h1 {
+  font-size: 50px;
+}
+
+.header__h2 {
+  font-size: 30px;
+}
+
+.link {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #353839;
+  text-decoration: none;
+}
+
+.icon {
+  color: #f5f5f5;
+}
+
+.nav {
+  align-items: center;
+  background-color: #1d61af;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header {
+  text-align: right;
+  margin: 100px 20px 0 0;
+}
+
+.header > * {
+  margin-bottom: 10px;
+}
+
+.header__balloon-img {
+  position: absolute;
+  top: 110px;
+  left: 30px;
+}
+
+.icon {
+  margin-right: 10px;
 }
 
 body {

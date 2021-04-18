@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Comfortaa", cursive;
+}
+
+body {
+  background: linear-gradient(#67a8ec, rgba(103, 168, 236, 0.5));
+  background-repeat: no-repeat;
+  height: 1000px;
+}

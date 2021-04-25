@@ -1,3 +1,10 @@
+//headings: 
+
+.h2, .h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 //links:
 
 .link {
@@ -12,7 +19,7 @@
 
 //icons:
 .icon {
-  color: $color-white;
+  color: $color-black;
 }
 
 //buttons:
@@ -20,9 +27,27 @@
   background-color: $color-pink;
   border-radius: 10px;
   color: $color-black;
-  display: block;
+  display: inline-block;
   font-size: 20px;
   margin: auto;
   padding: 10px;
-  width: 160px;
+  text-align: center;
+
+  &--header {
+    margin-top: 50px;
+  }
+
+  &--projects {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+  }
+  
+}
+
+//screenshots: 
+
+.projects__screenshot {
+  border: 3px solid $color-sky-blue;
 }

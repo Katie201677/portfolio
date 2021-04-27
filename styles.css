@@ -142,6 +142,7 @@ body {
 }
 .projects__screenshot {
   display: block;
+  height: 180px;
   margin: 30px auto 20px auto;
   width: 70%;
 }

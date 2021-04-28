@@ -79,7 +79,7 @@ body {
   background-color: #1d61af;
   display: flex;
   height: 50px;
-  justify-content: space-between;
+  justify-content: center;
   overflow-x: hidden;
   position: fixed;
   top: 0;
@@ -107,7 +107,7 @@ body {
 .header__balloon-img {
   left: 20px;
   position: absolute;
-  top: 70px;
+  top: 80px;
 }
 .header__cloud-img {
   display: none;
@@ -120,6 +120,12 @@ body {
   width: 20%;
   z-index: 1;
 }
+.header__trees-img {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  width: 100px;
+}
 .header__wave-img {
   bottom: 0;
   left: 0;
@@ -130,8 +136,11 @@ body {
 }
 
 @media screen and (min-width: 760px) {
+  .header__wave-img {
+    height: 30%;
+  }
   .header__bike-img {
-    bottom: 8%;
+    bottom: 6%;
     transform: rotate(-15deg);
     width: 10%;
   }
@@ -139,19 +148,23 @@ body {
     display: inline;
     position: absolute;
   }
+  .header__trees-img {
+    bottom: 10%;
+    width: 150px;
+  }
 
   #cloud1 {
-    top: 30px;
+    top: 35px;
     right: 40%;
   }
 
   #cloud2 {
-    top: 90px;
+    top: 95px;
     right: 35%;
   }
 
   #cloud3 {
-    top: 80px;
+    top: 85px;
     right: 30%;
   }
 }
@@ -196,6 +209,7 @@ body {
   margin-top: 20px;
 }
 .projects__see-more {
+  align-items: center;
   display: flex;
   justify-content: center;
 }

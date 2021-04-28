@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +11,7 @@
 
 body {
   font-family: "Noto Sans", sans-serif;
+  color: #353839;
 }
 
 .h1 {
@@ -24,30 +29,23 @@ body {
   font-family: "Comfortaa", cursive;
 }
 
-.h2, .h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.h2--about, .h3--about {
-  margin-top: 50px;
-}
-.h2--contact, .h3--contact {
-  padding: 10px;
-  margin: 0;
-}
-
 .link {
   color: #f5f5f5;
   text-decoration: none;
+}
+.link--icon {
+  color: #353839;
 }
 
 .link:hover {
   color: #353839;
   text-decoration: none;
+  transform: scale(1.2);
 }
 
-.icon {
-  color: #353839;
+.link--icon:hover {
+  color: #f5f5f5;
+  transform: scale(1.2);
 }
 
 .button {
@@ -194,7 +192,6 @@ body {
 }
 .projects__screenshot {
   display: block;
-  height: 180px;
   margin: 30px auto 20px auto;
   width: 70%;
 }
@@ -267,6 +264,9 @@ body {
   padding-bottom: 70px;
   text-align: center;
 }
+.about__h2 {
+  margin-top: 50px;
+}
 .about__text {
   line-height: 1.8;
   margin: 10px auto 0 auto;
@@ -299,6 +299,9 @@ body {
   top: 15px;
   right: 50px;
 }
+.contact__h2 {
+  padding: 20px;
+}
 .contact__text {
   background-color: #67a8ec;
 }
@@ -310,7 +313,6 @@ body {
 .header {
   background: linear-gradient(#67a8ec, rgba(103, 168, 236, 0.5));
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .projects {

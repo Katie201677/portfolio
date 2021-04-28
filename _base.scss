@@ -1,4 +1,8 @@
 // global resets:
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,7 @@
 // font-rules:
 body {
   font-family: $font-main;
+  color: $color-black;
 }
 
 .h1 {

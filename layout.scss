@@ -148,7 +148,7 @@
 
   &__screenshot {
     display: block;
-    height: 180px;
+    // height: 180px;
     margin: 30px auto 20px auto;
     width: 70%;
   }
@@ -237,6 +237,10 @@
   padding-bottom: 70px;
   text-align: center;
   
+  &__h2 {
+    margin-top: 50px;
+  }
+
   &__text {
     line-height: 1.8;
     margin: 10px auto 0 auto;
@@ -277,6 +281,10 @@
     right: 50px;
   }
 
+  &__h2 {
+    padding: 20px;
+  }
+  
   &__text {
     background-color: $sea-blue;
   }

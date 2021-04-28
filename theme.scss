@@ -5,5 +5,13 @@
 }
 
 .projects {
-  background: linear-gradient($color-green, $color-white-fade);
+  background: linear-gradient($color-green, $color-white-fade 95%, $color-sand);
 }
+
+.about {
+  background-color: $color-sand;
+  background-image: url(./images/footprints.png);
+  background-repeat: no-repeat;
+  background-position: 90% 10%;
+}
+

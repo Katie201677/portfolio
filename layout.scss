@@ -23,6 +23,7 @@
 
 .header {
   height: 100vh;
+  position: relative;
   text-align: center;
   width: 100%;
 
@@ -41,29 +42,65 @@
     top: 70px;
   }
 
+  &__cloud-img {
+    display: none;
+  }
+  
   &__bike-img {
-  bottom: 2%;
+  bottom: 4%;
   left: 1%;
   position: absolute;
-  transform: rotate(-10deg);
+  transform: rotate(-18deg);
   width: 20%;
   z-index: 1;
   }
 
   &__wave-img {
     bottom: 0;
-    height: 20%;
     left: 0;
     margin-bottom: 0;
     position: absolute;
+    display: block;
     width: 100%;
   }
 }
 
 @media screen and (min-width: 760px) {
-  .header__bike-img {
-    transform: rotate(-5deg);
+  .header {
+    
+    &__bike-img {
+    bottom: 8%;
+    transform: rotate(-15deg);
     width: 10%;
+    }
+
+    &__cloud-img {
+      display: inline;
+      position: absolute;
+    }
+  }
+
+  #cloud1 {
+    top: 30px;
+    right: 40%;
+  }
+
+  #cloud2 {
+    top: 90px;
+    right: 35%;
+  }
+
+  #cloud3 {
+    top: 80px;
+    right: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    &__wave-img {
+      height: 30%;
+    }
   }
 }
 
@@ -89,6 +126,10 @@
   text-align: center;
   }
 
+  &__container {
+  margin-bottom: 40px;
+  }
+
   &__screenshot {
     display: block;
     height: 180px;
@@ -108,8 +149,14 @@
     margin-top: 20px;
   }
 
+  &__see-more {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
   &__road-img {
-    bottom: 0px;
+    bottom: 0;
     position: absolute;
     width: 100%;
   }
@@ -147,6 +194,7 @@
     }
 
     &__bike-img {
+      bottom: 3%;
       width: 10%;
     }
   }
@@ -165,8 +213,65 @@
 
   #project4 {
     display: none;
+    // scroll to be added in JS
   } 
 }
+
+.about {
+  padding-bottom: 70px;
+  text-align: center;
+  
+  &__text {
+    line-height: 1.8;
+    margin: 10px auto 0 auto;
+    width: 70%;
+  }
+
+  &__icons {
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .about {
+    &__text {
+      width: 50%;
+    }
+  }
+}
+
+.contact {
+  position: relative;
+  text-align: center;
+
+  &__wave-container {
+    background-color: $color-sand;
+    position: relative;
+  }
+  
+  &__wave-img {
+    display: block;
+    width: 100%
+  }
+
+  &__SUP-img {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+  }
+
+  &__text {
+    background-color: $sea-blue;
+  }
+
+  &__icons {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+
+}
+
 
 
 

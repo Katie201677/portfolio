@@ -1,3 +1,4 @@
+@use "abstracts/variables" as *;
 
 //nav: 
 
@@ -7,7 +8,6 @@
   display: flex;
   height: 50px;
   justify-content: center;
-  overflow-x: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -27,13 +27,13 @@
   text-align: center;
   width: 100%;
 
-  * {
-    margin-bottom: 10px;
-  }
-  
   &__titles {
     padding: 100px 20px 0 0;
     text-align: right;
+  }
+
+  &__titles > * {
+    margin-bottom: 10px;
   }
 
   &__balloon-img {
@@ -44,15 +44,16 @@
 
   &__cloud-img {
     display: none;
+    // hidden on mobile view
   }
   
   &__bike-img {
-  bottom: 4%;
-  left: 1%;
-  position: absolute;
-  transform: rotate(-18deg);
-  width: 20%;
-  z-index: 1;
+    bottom: 4%;
+    left: 1%;
+    position: absolute;
+    transform: rotate(-18deg);
+    width: 20%;
+    z-index: 1;
   }
 
   &__trees-img {
@@ -65,10 +66,21 @@
   &__wave-img {
     bottom: 0;
     left: 0;
-    margin-bottom: 0;
     position: absolute;
-    display: block;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .header__trees-img {
+    bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header__trees-img {
+    bottom: 10%;
+    width: 150px;
   }
 }
 
@@ -134,21 +146,20 @@
 //projects:
 
 .projects {
-  height: 95vh;
   padding-bottom: 100px;
+  padding-top: 50px;
   position: relative;
   
   * {
-  text-align: center;
+    text-align: center;
   }
 
   &__container {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   &__screenshot {
     display: block;
-    // height: 180px;
     margin: 30px auto 20px auto;
     width: 70%;
   }
@@ -156,9 +167,13 @@
   &__description {
     height: 70px;
     margin: 10px auto 10px auto;
-    width: 80%;
+    width: 70%;
   }
 
+  &__icons {
+    font-size: larger;
+  }
+  
   &__buttons {
     display: flex;
     justify-content: center;
@@ -166,9 +181,11 @@
   }
 
   &__see-more {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    // add in when using JS to display more
+    display: none;
+    // align-items: center;
+    // display: flex;
+    // justify-content: center;
   }
 
   &__road-img {
@@ -176,15 +193,6 @@
     position: absolute;
     width: 100%;
   }
-
-  &__bike-img {
-    bottom: 3%;
-    left: 10px;
-    position: absolute;
-    transform: scaleX(-1);
-    width: 20%;
-    z-index: 1;
-    }
 }
 
 #project2, #project3, #project4 {
@@ -199,6 +207,7 @@
   
   .projects {
     height: auto;
+    padding-bottom: 150px;
     
     &__arrows {
       display: none;
@@ -248,8 +257,20 @@
   }
 
   &__icons {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 150px 150px;
+  }
+  
+  &__icon {
+    font-size: larger;
     padding: 10px;
-    margin-bottom: 50px;
+  }
+
+  &__skill {
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 }
 

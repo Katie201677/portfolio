@@ -1,3 +1,5 @@
+@use "abstracts/variables" as *;
+
 .header {
   background: linear-gradient($color-sky-blue, $color-blue-fade);
   background-repeat: no-repeat;

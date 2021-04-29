@@ -1,5 +1,4 @@
-@import "./abstracts/variables";
-@import "./base";
-@import "./components.scss";
-@import "./layout.scss";
-@import "./theme.scss";
+@use "./base";
+@use "./components.scss";
+@use "./layout.scss";
+@use "./theme.scss";

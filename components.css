@@ -17,6 +17,10 @@
   transform: scale(1.2);
 }
 
+.link--codewars:hover {
+  color: #353839;
+}
+
 .button {
   background-color: #ea5267;
   border-radius: 10px;

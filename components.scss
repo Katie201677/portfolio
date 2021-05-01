@@ -21,6 +21,10 @@
   transform: scale(1.2);
 }
 
+.link--codewars:hover {
+  color: $color-black;
+}
+
 //buttons:
 .button {
   background-color: $color-pink;

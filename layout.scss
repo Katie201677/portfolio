@@ -193,21 +193,29 @@
     position: absolute;
     width: 100%;
   }
+  
+  &__card--md {
+    display: none;
+  }
 }
 
-#project2, #project3, #project4 {
-  display: none;
-  // to add scroll for mobile view with JS
-}
+// #project2, #project3, #project4 {
+//   display: none;
+//   // to add scroll for mobile view with JS
+// }
 
 @media screen and (min-width: 760px) {
-  #project2, #project3, #project4 {
-    display: block;
-  }
+  // #project2, #project3, #project4 {
+  //   display: block;
+  // }
   
   .projects {
     height: auto;
     padding-bottom: 150px;
+    
+    &__card--md {
+      display: block;
+    }
     
     &__arrows {
       display: none;
@@ -234,12 +242,20 @@
     &__bike-img {
       bottom: 7%;
     }
+
+    &__card--md {
+      display: none;
+    }
+    
+    &__card--lg {
+      display: block;
+    }
   }
 
-  #project4 {
-    display: none;
-    // scroll to be added in JS
-  } 
+  // #project4 {
+  //   display: none;
+  //   // scroll to be added in JS
+  // } 
 }
 
 .about {

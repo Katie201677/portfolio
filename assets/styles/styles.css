@@ -233,19 +233,17 @@ body {
   position: absolute;
   width: 100%;
 }
-
-#project2, #project3, #project4 {
+.projects__card--md {
   display: none;
 }
 
 @media screen and (min-width: 760px) {
-  #project2, #project3, #project4 {
-    display: block;
-  }
-
   .projects {
     height: auto;
     padding-bottom: 150px;
+  }
+  .projects__card--md {
+    display: block;
   }
   .projects__arrows {
     display: none;
@@ -266,9 +264,11 @@ body {
   .projects__bike-img {
     bottom: 7%;
   }
-
-  #project4 {
+  .projects__card--md {
     display: none;
+  }
+  .projects__card--lg {
+    display: block;
   }
 }
 .about {

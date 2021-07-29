@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./assets/styles/styles.css">
   <script src="https://kit.fontawesome.com/89905c4029.js" crossorigin="anonymous"></script>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="./scripts/script.js" defer type="module"></script>
 </head>
 <body>
 
@@ -41,91 +42,30 @@
 
     <main class="main">
 
-      <div class="main-container">
+      <!-- <div class="main-container"> -->
 
         <section class="projects" id="projects">
           <h2 class="projects__h2">My Projects</h2>
+          <div class="projects__container"></div>
+          <div class="projects__arrows"> 
+            <a href=""><i class="fas fa-arrow-left link--icon"></i></a>
+            <a href=""><i class="fas fa-arrow-right link--icon"></i></a>
+          </div>
           
-          <div class="projects__container">
-
-            <div class="projects__card projects__card--all" id="project1">
-              <a href="https://katie201677.github.io/JavaScript-Memory-Game/" target="_blank">
-                <img src="./assets/images/Memory-Game.png" alt="screenshot of website" class="projects__screenshot">
-              </a>
-              <div class="projects__arrows">
-                <!-- add scroll between projects in javascript -->
-                <a href=""><i class="fas fa-arrow-left link--icon"></i></a>
-                <a href=""><i class="fas fa-arrow-right link--icon"></i></a>
-              </div>
-              <h3 class="projects__h3">Match the Pairs</h3>
-              <p class="projects__description">Pairs matching game for kids built with React functional components.</p>
-              <div class="projects__icons">
-                <i class="fab fa-html5 icon"></i>
-                <i class="fab fa-css3-alt icon"></i>
-                <i class="fab fa-react icon"></i>
-              </div>
-              <div class="projects__buttons">
-                <a href="https://katie201677.github.io/JavaScript-Memory-Game/" class="button button--projects link" target="_blank">Launch<i class="fas fa-external-link-alt icon"></i></a>
-                <a href="https://github.com/Katie201677/JavaScript-Memory-Game" class="button button--projects link" target="_blank">Code<i class="fab fa-github-square icon"></i></a>
-              </div>
-            </div>
-
-            <div class="projects__card projects__card--md projects__card--lg" id="project2">
-              <a href="https://github.com/Katie201677/JavaScript-Calculator" target="_blank">
-                <img src="./assets/images/calculator.png" alt="screenshot of website" class="projects__screenshot">
-              </a>
-              <div class="projects__arrows">
-                <a href="" class="link"><i class="fas fa-arrow-left fa-2x icon"></i></a>
-                <a href="" class="link"><i class="fas fa-arrow-right fa-2x icon"></i></a>
-              </div>
-              <h3 class="projects__h3">Catch the Apples Canvas Game</h3>
-              <p class="projects__description">Simple HTML5 canvas game including moving sprite, built to learn canvas and basics of building a game. </p>
-              <div class="projects__icons">
-                <i class="fab fa-html5 icon"></i>
-                <i class="fab fa-css3-alt icon"></i>
-                <i class="fab fa-js-square icon"></i>
-              </div>
-              <div class="projects__buttons">
-                <a href="https://katie201677.github.io/JavaScript-Calculator/" class="button button--projects link" target="_blank">Launch<i class="fas fa-external-link-alt icon"></i></a>
-                <a href="https://github.com/Katie201677/JavaScript-Calculator" class="button button--projects link" target="_blank">Code<i class="fab fa-github-square icon"></i></a>
-              </div>
-            </div>
-
-            <div class="projects__card projects__card--md projects__card--lg" id="project3">
-              <a href="https://katie201677.github.io/avoid-the-bombs-canvas-game/" target="_blank">
-                <img src="./assets/images/project2.png" alt="screenshot of website" class="projects__screenshot">
-              </a>
-              <div class="projects__arrows">
-                <a href="" class="link"><i class="fas fa-arrow-left fa-2x icon"></i></a>
-                <a href="" class="link"><i class="fas fa-arrow-right fa-2x icon"></i></a>
-              </div>
-              <h3 class="projects__h3">Catch the Apples Canvas Game</h3>
-              <p class="projects__description">Simple HTML5 canvas game including moving sprite, built to learn canvas and basics of building a game. </p>
-              <div class="projects__icons">
-                <i class="fab fa-html5 icon"></i>
-                <i class="fab fa-css3-alt icon"></i>
-                <i class="fab fa-js-square icon"></i>
-              </div>
-              <div class="projects__buttons">
-                <a href="https://katie201677.github.io/avoid-the-bombs-canvas-game/" class="button button--projects link" target="_blank">Launch<i class="fas fa-external-link-alt icon"></i></a>
-                <a href="https://github.com/Katie201677/avoid-the-bombs-canvas-game" class="button button--projects link" target="_blank">Code<i class="fab fa-github-square icon"></i></a>
-              </div>
-            </div>
-
           <div class="projects__see-more">
             <h3 class="projects__h3">See more projects here:</h3>
             <i class="fas fa-arrow-circle-down icon"></i>
           </div>
 
-          <div class=".projects__more-code">
+          <!-- <div class=".projects__more-code">
             <h4>See more of my code on Codewars:</h4>
             <a href="https://www.codewars.com/users/Katie201677" class="link link--icon link--codewars">
               <span class="iconify icon" data-icon="simple-icons:codewars" data-inline="false"></span>
             </a>
-          </div>
+          </div> -->
 
           <img src="./assets/images/bikeandroad.png" alt="illustration of cyclist on road" class="projects__road-img">
-          
+
         </section>
 
         <section class="about" id="about">
@@ -170,7 +110,7 @@
        
         </section>
 
-      </div>
+      <!-- </div> -->
 
     </main>
 

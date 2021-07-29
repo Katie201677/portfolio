@@ -161,6 +161,7 @@
   &__screenshot {
     display: block;
     margin: 30px auto 20px auto;
+    height: 200px;
     width: 70%;
   }
 
@@ -199,15 +200,19 @@
   }
 }
 
-// #project2, #project3, #project4 {
+// #2, #3, #4, #5 {
 //   display: none;
 //   // to add scroll for mobile view with JS
 // }
 
+#2 {
+  display: none;
+}
+
 @media screen and (min-width: 760px) {
-  // #project2, #project3, #project4 {
-  //   display: block;
-  // }
+  #2, #3, #4, #5 {
+    display: block;
+  }
   
   .projects {
     height: auto;

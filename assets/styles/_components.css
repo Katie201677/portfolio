@@ -17,10 +17,6 @@
   transform: scale(1.2);
 }
 
-.link--codewars:hover {
-  color: #353839;
-}
-
 .button {
   background-color: #ea5267;
   border-radius: 10px;
@@ -41,9 +37,16 @@
   width: auto;
 }
 
-.nav--button {
+.nav__button {
   background-color: inherit;
   border: none;
+}
+
+.nav__close > i {
+  color: #f5f5f5;
+}
+
+.header__nav--open {
   font-size: larger;
 }
 

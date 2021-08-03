@@ -3,7 +3,7 @@
 var leftArrow = document.querySelector(".left-arrow");
 console.log(leftArrow);
 var navBar = document.querySelector(".nav");
-var navCloseButton = document.querySelector(".nav--close");
+var navCloseButton = document.querySelector(".nav__close");
 var navOpenButton = document.querySelector(".header__nav--open");
 var projectCards = document.querySelectorAll(".projects__card");
 var projectsContainer = document.querySelector(".projects__container");

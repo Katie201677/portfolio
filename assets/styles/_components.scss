@@ -21,10 +21,6 @@
   transform: scale(1.2);
 }
 
-.link--codewars:hover {
-  color: $color-black;
-}
-
 //buttons:
 .button {
   background-color: $color-pink;
@@ -49,9 +45,16 @@
 }
 
 //nav buttons:active
-.nav--button {
+.nav__button {
   background-color: inherit;
   border: none;
+}
+
+.nav__close > i {
+  color: $color-white;
+}
+
+.header__nav--open {
   font-size: larger;
 }
 

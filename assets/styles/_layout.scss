@@ -7,13 +7,23 @@
   background-color: $color-dark-blue;
   display: flex;
   height: 50px;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
 
   &__link {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+  }
+
+  &__close {
     padding-left: 10px;
     padding-right: 10px;
   }

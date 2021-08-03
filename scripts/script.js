@@ -1,7 +1,7 @@
 const leftArrow = document.querySelector(".left-arrow");
 console.log(leftArrow);
 const navBar = document.querySelector(".nav");
-const navCloseButton = document.querySelector(".nav--close");
+const navCloseButton = document.querySelector(".nav__close");
 const navOpenButton = document.querySelector(".header__nav--open");
 const projectCards = document.querySelectorAll(".projects__card");
 const projectsContainer = document.querySelector(".projects__container");

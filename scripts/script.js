@@ -1,7 +1,21 @@
-import projects from "./project-data.js";
-
+const leftArrow = document.querySelector(".left-arrow");
+console.log(leftArrow);
+const navBar = document.querySelector(".nav");
+const navCloseButton = document.querySelector(".nav--close");
+const navOpenButton = document.querySelector(".header__nav--open");
+const projectCards = document.querySelectorAll(".projects__card");
 const projectsContainer = document.querySelector(".projects__container");
-const projectsArrows = document.querySelector(".projects__arrows");
+const rightArrow = document.querySelector(".right-arrow");
+
+let count = 1;
+
+const getProjects = () => {
+  return (
+  fetch("./project-data.json")
+    .then(response => response.json())
+  )
+}
+
 
 const generateIconsHtml = (iconsArray) => {
   const icons = iconsArray.map(icon =>`<i class="${icon}"></i>`).join("");
@@ -11,7 +25,7 @@ const generateIconsHtml = (iconsArray) => {
 
 const generateProjectHtml = (project) => {
   return (
-    `<div class="projects__card projects__card--all" id=${project.id}>
+    `<div class="projects__card" id="project${project.id}">
     <a href=${project.link} target="_blank">
       <img src=${project.img} alt=${project.alt} class="projects__screenshot">
     </a>
@@ -29,10 +43,40 @@ const generateProjectHtml = (project) => {
   )
 }
 
-projectsContainer.innerHTML = projects.map((project) => {
-  return generateProjectHtml(project);
-}).join("");
+const scrollProjects = (direction) => {
+  const currentProject = document.querySelector(`#project${count}`);
+  let newCount;
+  if (direction === "left") {
+    newCount = count > 1 ? count - 1 : 5;
+  } else {
+    newCount = count < 5 ? count + 1 : 1;
+  }
+  const nextProject = document.querySelector(`#project${newCount}`);
+  currentProject.style.display = "none";
+  nextProject.style.display = "block";
+  count = newCount;
+}
 
-projectsArrows.addEventListener("click", () => {
-  console.log("arrow clicked");
+navOpenButton.addEventListener("click", () => {
+  navOpenButton.style.display = "none";
+  navBar.style.display = "flex";
+});
+
+navCloseButton.addEventListener("click", () => {
+  navOpenButton.style.display = "block";
+  navBar.style.display = "none";
+})
+
+leftArrow.addEventListener("click", () => {
+  scrollProjects("left");
+});
+
+rightArrow.addEventListener("click", () => {
+  scrollProjects("right");
+});
+
+getProjects().then((projects) => {
+  projectsContainer.innerHTML = projects.map((project) => {
+    return generateProjectHtml(project);
+  }).join("");
 })

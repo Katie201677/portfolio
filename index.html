@@ -12,107 +12,106 @@
 <body>
 
   <nav class="nav">
-    <a href="#projects" class="nav__link link">Projects</a>
-    <a href="#about" class="nav__link link">About</a>
-    <a href="#contact" class="nav__link link">Contact</a>
+    <div class="nav--content">
+      <a href="#projects" class="nav__link link">Projects</a>
+      <a href="#about" class="nav__link link">About</a>
+      <a href="#contact" class="nav__link link">Contact</a>
+    </div>
+    <button class="nav--button nav--close"><i class="fas fa-times link--icon"></i></button>
   </nav>
 
-    <header class="header">
+  <header class="header">
+    <button class="nav--button header__nav--open"><i class="fas fa-bars link--icon"></i></button>
+    <div class="header__titles">
+      <h1 class="h1">Hello,</h1>
+      <h2 class="h2">I'm Katie,</h2>
+      <h2 class="h2">web developer.</h2>
+      <a href="https://github.com/Katie201677"><i class="fab fa-github fa-2x link--icon icon"></i></a>
+      <a href="https://www.linkedin.com/in/katiewalker20/"><i class="fab fa-linkedin fa-2x link--icon icon"></i></a>
+    </div>
 
-      <div class="header__titles">
-        <h1 class="h1">Hello,</h1>
-        <h2 class="h2">I'm Katie,</h2>
-        <h2 class="h2">web developer.</h2>
-        <a href="https://github.com/Katie201677"><i class="fab fa-github fa-2x link--icon icon"></i></a>
-        <a href="https://www.linkedin.com/in/katiewalker20/"><i class="fab fa-linkedin fa-2x link--icon icon"></i></a>
+    <img src="./assets/images/balloon.png" alt="illustration of hot air balloon" class="header__balloon-img">
+    <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud1">
+    <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud2">
+    <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud3">
+
+    <a href="#projects" class="button button--header link">View My Work</a>
+
+    <img src="./assets/images/bike.png" alt="illustration of lady riding bike" class="header__bike-img">
+    <img src="./assets/images/wave.png" alt="picture of green hill with cyclist on" class="header__wave-img">
+    <img src="./assets/images/trees.png" alt="illustration of trees" class="header__trees-img">
+  
+  </header>
+
+  <main class="main">
+
+    <section class="projects" id="projects">
+      <h2 class="projects__h2">My Projects</h2>
+      <div class="projects__container"></div>
+      <div class="projects__arrows"> 
+        <button class="left-arrow"><i class="fas fa-arrow-left link--icon"></i></button>
+        <button class="right-arrow"><i class="fas fa-arrow-right link--icon"></i></button>
+      </div>
+      
+      <div class="projects__see-more">
+        <h3 class="projects__h3">See more projects here:</h3>
+        <i class="fas fa-arrow-circle-down icon"></i>
       </div>
 
-      <img src="./assets/images/balloon.png" alt="illustration of hot air balloon" class="header__balloon-img">
-      <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud1">
-      <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud2">
-      <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud3">
+      <!-- <div class=".projects__more-code">
+        <h4>See more of my code on Codewars:</h4>
+        <a href="https://www.codewars.com/users/Katie201677" class="link link--icon link--codewars">
+          <span class="iconify icon" data-icon="simple-icons:codewars" data-inline="false"></span>
+        </a>
+      </div> -->
 
-      <a href="#projects" class="button button--header link">View My Work</a>
+      <img src="./assets/images/bikeandroad.png" alt="illustration of cyclist on road" class="projects__road-img">
 
-      <img src="./assets/images/bike.png" alt="illustration of lady riding bike" class="header__bike-img">
-      <img src="./assets/images/wave.png" alt="picture of green hill with cyclist on" class="header__wave-img">
-      <img src="./assets/images/trees.png" alt="illustration of trees" class="header__trees-img">
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="about__h2">About Me</h2>
+      <p class="about__text">I’m a Bristol based junior developer training with _Nology. I am studying alongside being a full time parent to my 2 year old and 9 month old. I previously worked as a solicitor specialising in construction and engineering law. </p> 
+        
+      <p class="about__text"><a href="#contact" class="link">Contact me</a> or see <a href="https://www.linkedin.com/in/katiewalker20/" class="link">LinkedIn</a> for my full CV.</p>  
+        
+      <p class="about__text"> I have experience with:</p>
+      <div class="about__icons">
+        <div class="about__skill">
+          <i class="fab fa-html5 icon about__icon"></i>
+          <p>HTML</p>
+        </div>
+        <div class="about__skill">
+          <i class="fab fa-css3-alt icon about__icon"></i>
+          <p>CSS</p>
+        </div>
+        <div class="about__skill">
+          <i class="fab fa-js-square icon about__icon"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="about__skill">
+          <i class="fab fa-react icon about__icon"></i>
+          <p>React</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__wave-container">
+        <img src="./assets/images/sea-wave2.png" alt="illustration of wave on beach" class="contact__wave-img">
+      </div>
+      <div class="contact__text">
+        <h2 class="contact__h2">Contact Me</h2>
+        <p class="contact__text">katiewalker0517@gmail.com</p>
+        <div class="contact__icons">
+          <a href="https://github.com/Katie201677"><i class="fab fa-github fa-2x link--icon icon"></i></a>
+          <a href="https://www.linkedin.com/in/katiewalker20/"><i class="fab fa-linkedin fa-2x link--icon icon"></i></a>
+        </div>
+      </div>
     
-    </header>
+    </section>
 
-    <main class="main">
-
-      <!-- <div class="main-container"> -->
-
-        <section class="projects" id="projects">
-          <h2 class="projects__h2">My Projects</h2>
-          <div class="projects__container"></div>
-          <div class="projects__arrows"> 
-            <a href=""><i class="fas fa-arrow-left link--icon"></i></a>
-            <a href=""><i class="fas fa-arrow-right link--icon"></i></a>
-          </div>
-          
-          <div class="projects__see-more">
-            <h3 class="projects__h3">See more projects here:</h3>
-            <i class="fas fa-arrow-circle-down icon"></i>
-          </div>
-
-          <!-- <div class=".projects__more-code">
-            <h4>See more of my code on Codewars:</h4>
-            <a href="https://www.codewars.com/users/Katie201677" class="link link--icon link--codewars">
-              <span class="iconify icon" data-icon="simple-icons:codewars" data-inline="false"></span>
-            </a>
-          </div> -->
-
-          <img src="./assets/images/bikeandroad.png" alt="illustration of cyclist on road" class="projects__road-img">
-
-        </section>
-
-        <section class="about" id="about">
-          <h2 class="about__h2">About Me</h2>
-          <p class="about__text">I’m a Bristol based junior developer training with _Nology. I am studying alongside being a full time parent to my 2 year old and 9 month old. I previously worked as a solicitor specialising in construction and engineering law. </p> 
-            
-          <p class="about__text"><a href="#contact" class="link">Contact me</a> or see <a href="https://www.linkedin.com/in/katiewalker20/" class="link">LinkedIn</a> for my full CV.</p>  
-            
-          <p class="about__text"> I have experience with:</p>
-          <div class="about__icons">
-            <div class="about__skill">
-              <i class="fab fa-html5 icon about__icon"></i>
-              <p>HTML</p>
-            </div>
-            <div class="about__skill">
-              <i class="fab fa-css3-alt icon about__icon"></i>
-              <p>CSS</p>
-            </div>
-            <div class="about__skill">
-              <i class="fab fa-js-square icon about__icon"></i>
-              <p>JavaScript</p>
-            </div>
-            <div class="about__skill">
-              <i class="fab fa-react icon about__icon"></i>
-              <p>React</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="contact" id="contact">
-          <div class="contact__wave-container">
-            <img src="./assets/images/sea-wave2.png" alt="illustration of wave on beach" class="contact__wave-img">
-          </div>
-          <div class="contact__text">
-            <h2 class="contact__h2">Contact Me</h2>
-            <p class="contact__text">katiewalker0517@gmail.com</p>
-            <div class="contact__icons">
-              <a href="https://github.com/Katie201677"><i class="fab fa-github fa-2x link--icon icon"></i></a>
-              <a href="https://www.linkedin.com/in/katiewalker20/"><i class="fab fa-linkedin fa-2x link--icon icon"></i></a>
-            </div>
-          </div>
-       
-        </section>
-
-      <!-- </div> -->
-
-    </main>
+  </main>
 
 
   

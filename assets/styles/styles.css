@@ -56,9 +56,9 @@ body {
 .button {
   background-color: #ea5267;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   color: #353839;
   display: inline-block;
-  font-size: 20px;
   margin: auto;
   padding: 10px;
   text-align: center;
@@ -67,7 +67,7 @@ body {
   margin-top: 50px;
 }
 .button--projects {
-  font-size: 14px;
+  font-size: 0.8em;
   margin-left: 5px;
   margin-right: 5px;
   width: auto;
@@ -90,12 +90,19 @@ body {
   border: 3px solid #67a8ec;
 }
 
+.arrow {
+  background-color: inherit;
+  border: none;
+  padding: 5px;
+}
+
 .nav {
   align-items: center;
   background-color: #1d61af;
   display: flex;
-  height: 50px;
-  justify-content: flex-end;
+  font-size: 0.8rem;
+  height: 40px;
+  justify-content: center;
   position: fixed;
   top: 0;
   width: 100%;
@@ -105,54 +112,24 @@ body {
   padding-left: 10px;
   padding-right: 10px;
 }
-.nav__content {
-  align-items: center;
-  display: flex;
-}
-.nav__close {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
-.nav {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-  }
-  .nav--close {
-    display: none;
-  }
-
-  .header__nav--open {
-    display: none;
-  }
-}
 .header {
   height: 100vh;
   position: relative;
   text-align: center;
   width: 100%;
 }
-.header__nav--open {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 1;
-}
 .header__titles {
-  padding: 100px 20px 0 0;
+  padding: 100px 30px 0 0;
   text-align: right;
 }
 .header__titles > * {
   margin-bottom: 10px;
 }
 .header__balloon-img {
-  left: 20px;
+  left: 15px;
   position: absolute;
-  top: 80px;
+  top: 60px;
 }
 .header__cloud-img {
   display: none;
@@ -228,13 +205,11 @@ body {
 .projects * {
   text-align: center;
 }
-.projects__container {
-  margin-bottom: 40px;
-}
 .projects__screenshot {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   display: block;
+  height: 120px;
   margin: 30px auto 20px auto;
-  height: 200px;
   width: 70%;
 }
 .projects__description {
@@ -250,11 +225,15 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
+.projects__arrows {
+  margin-top: 20px;
+}
 .projects__see-more {
   display: none;
 }
 .projects__road-img {
   bottom: 0;
+  height: 10%;
   position: absolute;
   width: 100%;
 }
@@ -306,10 +285,8 @@ body {
 }
 .about {
   padding-bottom: 70px;
+  padding-top: 50px;
   text-align: center;
-}
-.about__h2 {
-  margin-top: 50px;
 }
 .about__text {
   line-height: 1.8;
@@ -317,9 +294,9 @@ body {
   width: 70%;
 }
 .about__icons {
-  justify-content: center;
   display: grid;
-  grid-template-columns: 150px 150px;
+  grid-template-columns: repeat(2, 40%);
+  justify-content: center;
 }
 .about__icon {
   font-size: larger;
@@ -375,7 +352,7 @@ body {
 
 .about {
   background-color: rgba(250, 160, 105, 0.7);
-  background-image: url(./images/footprints.png);
+  background-image: url(../images/footprints.png);
   background-repeat: no-repeat;
-  background-position: 90% 10%;
+  background-position: 90% 20%;
 }

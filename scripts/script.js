@@ -57,15 +57,15 @@ const scrollProjects = (direction) => {
   count = newCount;
 }
 
-navOpenButton.addEventListener("click", () => {
-  navOpenButton.style.display = "none";
-  navBar.style.display = "flex";
-});
+// navOpenButton.addEventListener("click", () => {
+//   navOpenButton.style.display = "none";
+//   navBar.style.display = "flex";
+// });
 
-navCloseButton.addEventListener("click", () => {
-  navOpenButton.style.display = "block";
-  navBar.style.display = "none";
-})
+// navCloseButton.addEventListener("click", () => {
+//   navOpenButton.style.display = "block";
+//   navBar.style.display = "none";
+// })
 
 leftArrow.addEventListener("click", () => {
   scrollProjects("left");

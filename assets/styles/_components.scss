@@ -25,9 +25,9 @@
 .button {
   background-color: $color-pink;
   border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   color: $color-black;
   display: inline-block;
-  font-size: 20px;
   margin: auto;
   padding: 10px;
   text-align: center;
@@ -37,7 +37,7 @@
   }
 
   &--projects {
-    font-size: 14px;
+    font-size: 0.8em;
     margin-left: 5px;
     margin-right: 5px;
     width: auto;
@@ -62,4 +62,10 @@
 
 .projects__screenshot {
   border: 3px solid $color-sky-blue;
+}
+
+.arrow {
+  background-color: inherit;
+  border: none;
+  padding: 5px;
 }

@@ -1,13 +1,13 @@
 @use "./variables" as *;
 
 //nav: 
-
 .nav {
   align-items: center;
   background-color: $color-dark-blue;
   display: flex;
-  height: 50px;
-  justify-content: flex-end;
+  font-size: 0.8rem;
+  height: 40px;
+  justify-content: center;
   position: fixed;
   top: 0;
   width: 100%;
@@ -17,36 +17,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-
-  &__content {
-    align-items: center;
-    display: flex;
-  }
-
-  &__close {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
-
-.nav {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .nav {
-    display: flex;
-
-    &--close {
-      display: none;
-    }
-  }
-
-  .header__nav--open {
-    display: none;
-  }
-}
-
 //header:
 
 .header {
@@ -54,16 +25,9 @@
   position: relative;
   text-align: center;
   width: 100%;
-
-  &__nav--open {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1;
-  }
   
   &__titles {
-    padding: 100px 20px 0 0;
+    padding: 100px 30px 0 0;
     text-align: right;
   }
 
@@ -72,9 +36,9 @@
   }
 
   &__balloon-img {
-    left: 20px;
+    left: 15px;
     position: absolute;
-    top: 80px;
+    top: 60px;
   }
 
   &__cloud-img {
@@ -105,19 +69,6 @@
     width: 100%;
   }
 }
-
-// @media screen and (min-width: 500px) {
-//   .header__trees-img {
-//     bottom: 10%;
-//   }
-// }
-
-// @media screen and (min-width: 600px) {
-//   .header__trees-img {
-//     bottom: 10%;
-//     width: 150px;
-//   }
-// }
 
 @media screen and (min-width: 768px) {
   .header {
@@ -183,14 +134,11 @@
     text-align: center;
   }
 
-  &__container {
-    margin-bottom: 40px;
-  }
-
   &__screenshot {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     display: block;
+    height: 120px;
     margin: 30px auto 20px auto;
-    height: 200px;
     width: 70%;
   }
 
@@ -210,6 +158,10 @@
     margin-top: 20px;
   }
 
+  &__arrows {
+    margin-top: 20px;
+  }
+
   &__see-more {
     // add in when using JS to display more
     display: none;
@@ -220,6 +172,7 @@
 
   &__road-img {
     bottom: 0;
+    height: 10%;
     position: absolute;
     width: 100%;
   }
@@ -280,20 +233,12 @@
       display: block;
     }
   }
-
-  // #project4 {
-  //   display: none;
-  //   // scroll to be added in JS
-  // } 
 }
 
 .about {
   padding-bottom: 70px;
+  padding-top: 50px;
   text-align: center;
-  
-  &__h2 {
-    margin-top: 50px;
-  }
 
   &__text {
     line-height: 1.8;
@@ -302,9 +247,9 @@
   }
 
   &__icons {
-    justify-content: center;
     display: grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
   }
   
   &__icon {
@@ -361,10 +306,3 @@
   }
 
 }
-
-
-
-
-
-
-

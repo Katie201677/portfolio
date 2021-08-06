@@ -42,16 +42,16 @@ var scrollProjects = function scrollProjects(direction) {
   currentProject.style.display = "none";
   nextProject.style.display = "block";
   count = newCount;
-};
+}; // navOpenButton.addEventListener("click", () => {
+//   navOpenButton.style.display = "none";
+//   navBar.style.display = "flex";
+// });
+// navCloseButton.addEventListener("click", () => {
+//   navOpenButton.style.display = "block";
+//   navBar.style.display = "none";
+// })
 
-navOpenButton.addEventListener("click", function () {
-  navOpenButton.style.display = "none";
-  navBar.style.display = "flex";
-});
-navCloseButton.addEventListener("click", function () {
-  navOpenButton.style.display = "block";
-  navBar.style.display = "none";
-});
+
 leftArrow.addEventListener("click", function () {
   scrollProjects("left");
 });

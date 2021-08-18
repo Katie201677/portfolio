@@ -1,12 +1,12 @@
 @use "./variables" as *;
 
 //nav: 
-
 .nav {
   align-items: center;
   background-color: $color-dark-blue;
   display: flex;
-  height: 50px;
+  font-size: 0.8rem;
+  height: 40px;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -19,6 +19,12 @@
   }
 }
 
+// media queries for nav:
+@media screen and (min-width: 768px) {
+  .nav {
+    font-size: inherit;
+  }
+}
 //header:
 
 .header {
@@ -26,18 +32,15 @@
   position: relative;
   text-align: center;
   width: 100%;
-
+  
   &__titles {
-    padding: 100px 20px 0 0;
+    margin-bottom: 20px;
+    padding: 100px 30px 0 0;
     text-align: right;
   }
 
-  &__titles > * {
-    margin-bottom: 10px;
-  }
-
   &__balloon-img {
-    left: 20px;
+    left: 30px;
     position: absolute;
     top: 80px;
   }
@@ -71,21 +74,17 @@
   }
 }
 
-@media screen and (min-width: 500px) {
-  .header__trees-img {
-    bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .header__trees-img {
-    bottom: 10%;
-    width: 150px;
-  }
-}
-
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .header {
+    
+    &__titles {
+      line-height: 1.3;
+      margin-bottom: 70px;
+    }
+    
+    &__balloon-img {
+
+    }
     
     &__wave-img {
       height: 30%;
@@ -110,21 +109,21 @@
 
   #cloud1 {
     top: 35px;
-    right: 40%;
+    right: 50%;
   }
 
   #cloud2 {
     top: 95px;
-    right: 35%;
+    right: 40%;
   }
 
   #cloud3 {
-    top: 85px;
-    right: 30%;
+    top: 60px;
+    right: 32%;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header {
     &__wave-img {
       height: 30%;
@@ -135,12 +134,6 @@
 // icons
 .icon {
   margin-left: 5px;
-}
-
-//main grid:
-
-.main-container {
-  display: grid;
 }
 
 //projects:
@@ -154,14 +147,11 @@
     text-align: center;
   }
 
-  &__container {
-    margin-bottom: 40px;
-  }
-
   &__screenshot {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     display: block;
+    height: 120px;
     margin: 30px auto 20px auto;
-    width: 70%;
   }
 
   &__description {
@@ -180,6 +170,10 @@
     margin-top: 20px;
   }
 
+  &__arrows {
+    margin-top: 20px;
+  }
+
   &__see-more {
     // add in when using JS to display more
     display: none;
@@ -188,6 +182,10 @@
     // justify-content: center;
   }
 
+  &__displayOnTabletUp {
+    display: none;
+  }
+  
   &__road-img {
     bottom: 0;
     position: absolute;
@@ -199,15 +197,14 @@
   }
 }
 
-// #project2, #project3, #project4 {
-//   display: none;
-//   // to add scroll for mobile view with JS
-// }
+#project2, #project3, #project4, #project5 {
+  display: none;
+}
 
-@media screen and (min-width: 760px) {
-  // #project2, #project3, #project4 {
-  //   display: block;
-  // }
+@media screen and (min-width: 768px) {
+  #project2, #project3, #project4, #project5 {
+    display: block;
+  }
   
   .projects {
     height: auto;
@@ -226,14 +223,22 @@
       grid-template-columns: 1fr 1fr;
     }
 
-    &__bike-img {
+    &__displayOnTabletUp {
+      display: block;
+    }
+
+    &__displayOnPhone {
+      display: none;
+    }
+    
+    &__-img {
       bottom: 3%;
       width: 10%;
     }
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .projects {
     &__container {
       grid-template-columns: 1fr 1fr 1fr;
@@ -251,20 +256,12 @@
       display: block;
     }
   }
-
-  // #project4 {
-  //   display: none;
-  //   // scroll to be added in JS
-  // } 
 }
 
 .about {
   padding-bottom: 70px;
+  padding-top: 50px;
   text-align: center;
-  
-  &__h2 {
-    margin-top: 50px;
-  }
 
   &__text {
     line-height: 1.8;
@@ -273,9 +270,9 @@
   }
 
   &__icons {
-    justify-content: center;
     display: grid;
-    grid-template-columns: 150px 150px;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
   }
   
   &__icon {
@@ -332,10 +329,3 @@
   }
 
 }
-
-
-
-
-
-
-

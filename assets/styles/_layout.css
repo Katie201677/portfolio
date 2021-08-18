@@ -1,106 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans&display=swap");
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Noto Sans", sans-serif;
-  color: #353839;
-}
-
-.h1 {
-  font-size: 50px;
-  font-family: "Comfortaa", cursive;
-}
-
-.h2 {
-  font-size: 30px;
-  font-family: "Comfortaa", cursive;
-}
-
-.h3 {
-  font-size: 18px;
-  font-family: "Comfortaa", cursive;
-}
-
-.h4 {
-  font-size: 14px;
-  font-family: "Comfortaa", cursive;
-}
-
-.link {
-  color: #f5f5f5;
-  text-decoration: none;
-}
-.link--icon {
-  color: #353839;
-}
-
-.link:hover {
-  color: #353839;
-  text-decoration: none;
-  transform: scale(1.2);
-}
-
-.link--icon:hover {
-  color: #f5f5f5;
-  transform: scale(1.2);
-}
-
-.button {
-  background-color: #ea5267;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  color: #353839;
-  display: inline-block;
-  margin: auto;
-  padding: 10px;
-  text-align: center;
-}
-.button--header {
-  margin-top: 50px;
-}
-.button--projects {
-  font-size: 0.8em;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .button--header {
-    font-size: 1.2em;
-  }
-}
-.nav__button {
-  background-color: inherit;
-  border: none;
-}
-
-.nav__close > i {
-  color: #f5f5f5;
-}
-
-.header__nav--open {
-  font-size: larger;
-}
-
-.projects__screenshot {
-  border: 3px solid #67a8ec;
-}
-
-.arrow {
-  background-color: inherit;
-  border: none;
-  padding: 5px;
-}
-
 .nav {
   align-items: center;
   background-color: #1d61af;
@@ -135,7 +32,7 @@ body {
   text-align: right;
 }
 .header__balloon-img {
-  left: 30px;
+  left: 40px;
   position: absolute;
   top: 80px;
 }
@@ -165,7 +62,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .header__titles {
-    line-height: 1.3;
     margin-bottom: 70px;
   }
   .header__wave-img {
@@ -222,6 +118,7 @@ body {
   display: block;
   height: 120px;
   margin: 30px auto 20px auto;
+  width: 70%;
 }
 .projects__description {
   height: 70px;
@@ -242,11 +139,9 @@ body {
 .projects__see-more {
   display: none;
 }
-.projects__displayOnTabletUp {
-  display: none;
-}
 .projects__road-img {
   bottom: 0;
+  height: 10%;
   position: absolute;
   width: 100%;
 }
@@ -277,13 +172,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .projects__displayOnTabletUp {
-    display: block;
-  }
-  .projects__displayOnPhone {
-    display: none;
-  }
-  .projects__-img {
+  .projects__bike-img {
     bottom: 3%;
     width: 10%;
   }
@@ -358,20 +247,4 @@ body {
 .contact__icons {
   padding-bottom: 50px;
   padding-top: 20px;
-}
-
-.header {
-  background: linear-gradient(#67a8ec, rgba(103, 168, 236, 0.5));
-  background-repeat: no-repeat;
-}
-
-.projects {
-  background: linear-gradient(#77c07a, rgba(250, 250, 250, 0.5) 95%, rgba(250, 160, 105, 0.7));
-}
-
-.about {
-  background-color: rgba(250, 160, 105, 0.7);
-  background-image: url(../images/footprints.png);
-  background-repeat: no-repeat;
-  background-position: 90% 20%;
 }

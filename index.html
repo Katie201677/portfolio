@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./assets/styles/styles.css">
   <script src="https://kit.fontawesome.com/89905c4029.js" crossorigin="anonymous"></script>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="./scripts/script.js" defer type="module"></script>
 </head>
 <body>
 
@@ -16,163 +17,90 @@
     <a href="#contact" class="nav__link link">Contact</a>
   </nav>
 
-    <header class="header">
+  <header class="header">
+    <div class="header__titles">
+      <h1 class="h1">Hello,</h1>
+      <h2 class="h2">I'm Katie,</h2>
+      <h2 class="h2">web developer.</h2>
+      <a href="https://github.com/Katie201677"><i class="fab fa-github link--icon icon"></i></a>
+      <a href="https://www.linkedin.com/in/katiewalker20/"><i class="fab fa-linkedin link--icon icon"></i></a>
+    </div>
 
-      <div class="header__titles">
-        <h1 class="h1">Hello,</h1>
-        <h2 class="h2">I'm Katie,</h2>
-        <h2 class="h2">web developer.</h2>
-        <a href="https://github.com/Katie201677"><i class="fab fa-github fa-2x link--icon icon"></i></a>
-        <a href="https://www.linkedin.com/in/katiewalker20/"><i class="fab fa-linkedin fa-2x link--icon icon"></i></a>
+    <img src="./assets/images/balloon.png" alt="illustration of hot air balloon" class="header__balloon-img">
+    <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud1">
+    <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud2">
+    <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud3">
+
+    <a href="#projects" class="button button--header link">View My Work</a>
+
+    <img src="./assets/images/bike.png" alt="illustration of lady riding bike" class="header__bike-img">
+    <img src="./assets/images/wave.png" alt="picture of green hill with cyclist on" class="header__wave-img">
+    <img src="./assets/images/trees.png" alt="illustration of trees" class="header__trees-img">
+  
+  </header>
+
+  <main class="main">
+
+    <section class="projects" id="projects">
+      <h2 class="projects__h2">My Projects</h2>
+      <div class="projects__container"></div>
+      <div class="projects__arrows"> 
+        <button class="arrow left-arrow"><i class="fas fa-arrow-left"></i></button>
+        <button class="arrow right-arrow"><i class="fas fa-arrow-right"></i></button>
       </div>
 
-      <img src="./assets/images/balloon.png" alt="illustration of hot air balloon" class="header__balloon-img">
-      <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud1">
-      <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud2">
-      <img src="./assets/images/cloud.png" alt="illustration of cloud" class="header__cloud-img" id="cloud3">
+      <img src="./assets/images/bikeandroad-shorter.png" alt="illustration of cyclist on road" class="projects__road-img projects__displayOnPhone">
+      <img src="./assets/images/bikeandroad.png" alt="illustration of cyclist on road" class="projects__road-img projects__displayOnTabletUp">
 
-      <a href="#projects" class="button button--header link">View My Work</a>
+    </section>
 
-      <img src="./assets/images/bike.png" alt="illustration of lady riding bike" class="header__bike-img">
-      <img src="./assets/images/wave.png" alt="picture of green hill with cyclist on" class="header__wave-img">
-      <img src="./assets/images/trees.png" alt="illustration of trees" class="header__trees-img">
+    <section class="about" id="about">
+      <h2 class="about__h2">About Me</h2>
+      <p class="about__text">I’m a Bristol based junior developer training with _Nology. I am studying alongside being a full time parent to my two young children. I previously worked as a solicitor specialising in construction and engineering law. </p> 
+        
+      <p class="about__text"><a href="#contact" class="link">Contact me</a> or see <a href="https://www.linkedin.com/in/katiewalker20/" class="link">LinkedIn</a> for my full CV.</p>  
+        
+      <p class="about__text"> I have experience with:</p>
+      <div class="about__icons">
+        <div class="about__skill">
+          <i class="fab fa-html5 icon about__icon"></i>
+          <p>HTML</p>
+        </div>
+        <div class="about__skill">
+          <i class="fab fa-css3-alt icon about__icon"></i>
+          <p>CSS</p>
+        </div>
+        <div class="about__skill">
+          <i class="fab fa-js-square icon about__icon"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="about__skill">
+          <i class="fab fa-react icon about__icon"></i>
+          <p>React</p>
+        </div>
+        <div class="about__skill">
+          <i class="fab fa-github icon about__icon"></i>
+          <p>GitHub</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__wave-container">
+        <img src="./assets/images/sea-wave2.png" alt="illustration of wave on beach" class="contact__wave-img">
+      </div>
+      <div class="contact__text">
+        <h2 class="contact__h2">Contact Me</h2>
+        <p class="contact__text">katiewalker0517@gmail.com</p>
+        <div class="contact__icons">
+          <a href="https://github.com/Katie201677"><i class="fab fa-github fa-2x link--icon icon"></i></a>
+          <a href="https://www.linkedin.com/in/katiewalker20/"><i class="fab fa-linkedin fa-2x link--icon icon"></i></a>
+        </div>
+      </div>
     
-    </header>
+    </section>
 
-    <main class="main">
-
-      <div class="main-container">
-
-        <section class="projects" id="projects">
-          <h2 class="projects__h2">My Projects</h2>
-          
-          <div class="projects__container">
-
-            <div class="projects__card projects__card--all" id="project1">
-              <a href="https://katie201677.github.io/JavaScript-Memory-Game/" target="_blank">
-                <img src="./assets/images/Memory-Game.png" alt="screenshot of website" class="projects__screenshot">
-              </a>
-              <div class="projects__arrows">
-                <!-- add scroll between projects in javascript -->
-                <a href=""><i class="fas fa-arrow-left link--icon"></i></a>
-                <a href=""><i class="fas fa-arrow-right link--icon"></i></a>
-              </div>
-              <h3 class="projects__h3">Match the Pairs</h3>
-              <p class="projects__description">Pairs matching game for kids built with React functional components.</p>
-              <div class="projects__icons">
-                <i class="fab fa-html5 icon"></i>
-                <i class="fab fa-css3-alt icon"></i>
-                <i class="fab fa-react icon"></i>
-              </div>
-              <div class="projects__buttons">
-                <a href="https://katie201677.github.io/JavaScript-Memory-Game/" class="button button--projects link" target="_blank">Launch<i class="fas fa-external-link-alt icon"></i></a>
-                <a href="https://github.com/Katie201677/JavaScript-Memory-Game" class="button button--projects link" target="_blank">Code<i class="fab fa-github-square icon"></i></a>
-              </div>
-            </div>
-
-            <div class="projects__card projects__card--md projects__card--lg" id="project2">
-              <a href="https://github.com/Katie201677/JavaScript-Calculator" target="_blank">
-                <img src="./assets/images/calculator.png" alt="screenshot of website" class="projects__screenshot">
-              </a>
-              <div class="projects__arrows">
-                <a href="" class="link"><i class="fas fa-arrow-left fa-2x icon"></i></a>
-                <a href="" class="link"><i class="fas fa-arrow-right fa-2x icon"></i></a>
-              </div>
-              <h3 class="projects__h3">Catch the Apples Canvas Game</h3>
-              <p class="projects__description">Simple HTML5 canvas game including moving sprite, built to learn canvas and basics of building a game. </p>
-              <div class="projects__icons">
-                <i class="fab fa-html5 icon"></i>
-                <i class="fab fa-css3-alt icon"></i>
-                <i class="fab fa-js-square icon"></i>
-              </div>
-              <div class="projects__buttons">
-                <a href="https://katie201677.github.io/JavaScript-Calculator/" class="button button--projects link" target="_blank">Launch<i class="fas fa-external-link-alt icon"></i></a>
-                <a href="https://github.com/Katie201677/JavaScript-Calculator" class="button button--projects link" target="_blank">Code<i class="fab fa-github-square icon"></i></a>
-              </div>
-            </div>
-
-            <div class="projects__card projects__card--md projects__card--lg" id="project3">
-              <a href="https://katie201677.github.io/avoid-the-bombs-canvas-game/" target="_blank">
-                <img src="./assets/images/project2.png" alt="screenshot of website" class="projects__screenshot">
-              </a>
-              <div class="projects__arrows">
-                <a href="" class="link"><i class="fas fa-arrow-left fa-2x icon"></i></a>
-                <a href="" class="link"><i class="fas fa-arrow-right fa-2x icon"></i></a>
-              </div>
-              <h3 class="projects__h3">Catch the Apples Canvas Game</h3>
-              <p class="projects__description">Simple HTML5 canvas game including moving sprite, built to learn canvas and basics of building a game. </p>
-              <div class="projects__icons">
-                <i class="fab fa-html5 icon"></i>
-                <i class="fab fa-css3-alt icon"></i>
-                <i class="fab fa-js-square icon"></i>
-              </div>
-              <div class="projects__buttons">
-                <a href="https://katie201677.github.io/avoid-the-bombs-canvas-game/" class="button button--projects link" target="_blank">Launch<i class="fas fa-external-link-alt icon"></i></a>
-                <a href="https://github.com/Katie201677/avoid-the-bombs-canvas-game" class="button button--projects link" target="_blank">Code<i class="fab fa-github-square icon"></i></a>
-              </div>
-            </div>
-
-          <div class="projects__see-more">
-            <h3 class="projects__h3">See more projects here:</h3>
-            <i class="fas fa-arrow-circle-down icon"></i>
-          </div>
-
-          <div class=".projects__more-code">
-            <h4>See more of my code on Codewars:</h4>
-            <a href="https://www.codewars.com/users/Katie201677" class="link link--icon link--codewars">
-              <span class="iconify icon" data-icon="simple-icons:codewars" data-inline="false"></span>
-            </a>
-          </div>
-
-          <img src="./assets/images/bikeandroad.png" alt="illustration of cyclist on road" class="projects__road-img">
-          
-        </section>
-
-        <section class="about" id="about">
-          <h2 class="about__h2">About Me</h2>
-          <p class="about__text">I’m a Bristol based junior developer training with _Nology. I am studying alongside being a full time parent to my 2 year old and 9 month old. I previously worked as a solicitor specialising in construction and engineering law. </p> 
-            
-          <p class="about__text"><a href="#contact" class="link">Contact me</a> or see <a href="https://www.linkedin.com/in/katiewalker20/" class="link">LinkedIn</a> for my full CV.</p>  
-            
-          <p class="about__text"> I have experience with:</p>
-          <div class="about__icons">
-            <div class="about__skill">
-              <i class="fab fa-html5 icon about__icon"></i>
-              <p>HTML</p>
-            </div>
-            <div class="about__skill">
-              <i class="fab fa-css3-alt icon about__icon"></i>
-              <p>CSS</p>
-            </div>
-            <div class="about__skill">
-              <i class="fab fa-js-square icon about__icon"></i>
-              <p>JavaScript</p>
-            </div>
-            <div class="about__skill">
-              <i class="fab fa-react icon about__icon"></i>
-              <p>React</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="contact" id="contact">
-          <div class="contact__wave-container">
-            <img src="./assets/images/sea-wave2.png" alt="illustration of wave on beach" class="contact__wave-img">
-          </div>
-          <div class="contact__text">
-            <h2 class="contact__h2">Contact Me</h2>
-            <p class="contact__text">katiewalker0517@gmail.com</p>
-            <div class="contact__icons">
-              <a href="https://github.com/Katie201677"><i class="fab fa-github fa-2x link--icon icon"></i></a>
-              <a href="https://www.linkedin.com/in/katiewalker20/"><i class="fab fa-linkedin fa-2x link--icon icon"></i></a>
-            </div>
-          </div>
-       
-        </section>
-
-      </div>
-
-    </main>
+  </main>
 
 
   

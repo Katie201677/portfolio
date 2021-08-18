@@ -18,6 +18,13 @@
     padding-right: 10px;
   }
 }
+
+// media queries for nav:
+@media screen and (min-width: 768px) {
+  .nav {
+    font-size: inherit;
+  }
+}
 //header:
 
 .header {
@@ -27,18 +34,15 @@
   width: 100%;
   
   &__titles {
+    margin-bottom: 20px;
     padding: 100px 30px 0 0;
     text-align: right;
   }
 
-  &__titles > * {
-    margin-bottom: 10px;
-  }
-
   &__balloon-img {
-    left: 15px;
+    left: 30px;
     position: absolute;
-    top: 60px;
+    top: 80px;
   }
 
   &__cloud-img {
@@ -73,6 +77,15 @@
 @media screen and (min-width: 768px) {
   .header {
     
+    &__titles {
+      line-height: 1.3;
+      margin-bottom: 70px;
+    }
+    
+    &__balloon-img {
+
+    }
+    
     &__wave-img {
       height: 30%;
     }
@@ -96,17 +109,17 @@
 
   #cloud1 {
     top: 35px;
-    right: 40%;
+    right: 50%;
   }
 
   #cloud2 {
     top: 95px;
-    right: 35%;
+    right: 40%;
   }
 
   #cloud3 {
-    top: 85px;
-    right: 30%;
+    top: 60px;
+    right: 32%;
   }
 }
 
@@ -139,7 +152,6 @@
     display: block;
     height: 120px;
     margin: 30px auto 20px auto;
-    width: 70%;
   }
 
   &__description {
@@ -170,9 +182,12 @@
     // justify-content: center;
   }
 
+  &__displayOnTabletUp {
+    display: none;
+  }
+  
   &__road-img {
     bottom: 0;
-    height: 10%;
     position: absolute;
     width: 100%;
   }
@@ -208,7 +223,15 @@
       grid-template-columns: 1fr 1fr;
     }
 
-    &__bike-img {
+    &__displayOnTabletUp {
+      display: block;
+    }
+
+    &__displayOnPhone {
+      display: none;
+    }
+    
+    &__-img {
       bottom: 3%;
       width: 10%;
     }

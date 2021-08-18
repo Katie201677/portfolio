@@ -44,6 +44,12 @@
   } 
 }
 
+@media screen and (min-width: 768px) {
+  .button--header {
+    font-size: 1.2em;
+  }
+}
+
 //nav buttons:active
 .nav__button {
   background-color: inherit;

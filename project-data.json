@@ -6,7 +6,7 @@
     "alt": "screenshot of memory game project",
     "title": "Match the Pairs",
     "description": "JavaScript matching game with HTML5 canvas animated background.",
-    "icons": ["fab fa-html5 icon", "fab fa-css3-alt icon", "fab fa-js-square icon"],
+    "icons": ["fab fa-html5 icon", "fab fa-sass icon", "fab fa-js-square icon"],
     "github": "https://github.com/Katie201677/JavaScript-Memory-Game"
   },
 
@@ -17,7 +17,7 @@
     "alt": "screenshot of calculator project",
     "title": "JavaScript Calculator",
     "description": "Calculator built in pure JavaScript.",
-    "icons": ["fab fa-html5 icon", "fab fa-css3-alt icon", "fab fa-js-square icon"],
+    "icons": ["fab fa-html5 icon", "fab fa-sass icon", "fab fa-js-square icon"],
     "github": "https://github.com/Katie201677/JavaScript-Calculator"
   },
 
@@ -38,7 +38,7 @@
     "alt": "screenshot of translator project",
     "title": "English-Morse Code Translator",
     "description": "English - Morse Code translator built using ES6 classes.",
-    "icons": ["fab fa-html5 icon", "fab fa-css3-alt icon", "fab fa-js-square icon"],
+    "icons": ["fab fa-html5 icon", "fab fa-sass icon", "fab fa-js-square icon"],
     "github": "https://github.com/Katie201677/Translator"
   },
   {
@@ -48,7 +48,17 @@
     "alt": "screenshot of game",
     "title": "Hostile Aliens Browser Game",
     "description": "JavaScript browser game. Click to hit all the ships! Built using ES6 classes.",
-    "icons": ["fab fa-html5 icon", "fab fa-css3-alt icon", "fab fa-js-square icon"],
+    "icons": ["fab fa-html5 icon", "fab fa-sass icon", "fab fa-js-square icon"],
     "github": "https://github.com/Katie201677/hostile-aliens-challenge"
+  },
+  {
+    "id": 6,
+    "link": "https://katie201677.github.io/nology-Coursework-Punk-API-Project/",
+    "img": "./assets/images/project6.png",
+    "alt": "screenshot of game",
+    "title": "Beer Finder - Punk API",
+    "description": "Beer finder app built using React functional components and the Punk API.",
+    "icons": ["fab fa-html5 icon", "fab fa-sass icon", "fab fa-react icon"],
+    "github": "https://github.com/Katie201677/nology-Coursework-Punk-API-Project"
   }
 ]

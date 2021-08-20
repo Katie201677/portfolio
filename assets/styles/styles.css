@@ -45,12 +45,12 @@ body {
 .link:hover {
   color: #353839;
   text-decoration: none;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .link--icon:hover {
   color: #f5f5f5;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .button {

@@ -47,25 +47,15 @@ const scrollProjects = (direction) => {
   const currentProject = document.querySelector(`#project${count}`);
   let newCount;
   if (direction === "left") {
-    newCount = count > 1 ? count - 1 : 5;
+    newCount = count > 1 ? count - 1 : 6;
   } else {
-    newCount = count < 5 ? count + 1 : 1;
+    newCount = count < 6 ? count + 1 : 1;
   }
   const nextProject = document.querySelector(`#project${newCount}`);
   currentProject.style.display = "none";
   nextProject.style.display = "block";
   count = newCount;
 }
-
-// navOpenButton.addEventListener("click", () => {
-//   navOpenButton.style.display = "none";
-//   navBar.style.display = "flex";
-// });
-
-// navCloseButton.addEventListener("click", () => {
-//   navOpenButton.style.display = "block";
-//   navBar.style.display = "none";
-// })
 
 leftArrow.addEventListener("click", () => {
   scrollProjects("left");

@@ -172,14 +172,7 @@
 
   &__arrows {
     margin-top: 20px;
-  }
-
-  &__see-more {
-    // add in when using JS to display more
-    display: none;
-    // align-items: center;
-    // display: flex;
-    // justify-content: center;
+    margin-bottom: 30px;
   }
 
   &__displayOnTabletUp {
@@ -197,12 +190,20 @@
   }
 }
 
-#project2, #project3, #project4, #project5 {
+#project2, #project3, #project4, #project5, #project6 {
   display: none;
 }
 
+@media screen and (min-width: 700px) {
+  .projects {
+    &__road-img {
+      bottom: -10px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
-  #project2, #project3, #project4, #project5 {
+  #project2, #project3, #project4, #project5, #project6 {
     display: block;
   }
   
